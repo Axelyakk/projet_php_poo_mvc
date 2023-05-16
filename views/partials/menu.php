@@ -28,6 +28,13 @@
                     <a class="nav-link<?= (ROUTE == '/creer-un-compte/') ? ' active' : '' ?>" href="<?= PUBLIC_PATH ?>/creer-un-compte/">Inscription</a>
                 </li>
 
+
+                <!----Lien vers la page de connexion --->
+                <li class="nav-item">
+                    <a class="nav-link<?= (ROUTE == '/connexion/') ? ' active' : '' ?>" href="<?= PUBLIC_PATH ?>/connexion/">connexion</a>
+                </li>
+
+
             </ul>
 
         </div>
