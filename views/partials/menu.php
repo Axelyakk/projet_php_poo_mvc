@@ -34,6 +34,12 @@
                     <a class="nav-link<?= (ROUTE == '/connexion/') ? ' active' : '' ?>" href="<?= PUBLIC_PATH ?>/connexion/">connexion</a>
                 </li>
 
+                <!----Lien vers la page de deconnexion --->
+                <li class="nav-item">
+                    <a class="nav-link<?= (ROUTE == '/deconnexion/') ? ' active' : '' ?>" href="<?= PUBLIC_PATH ?>/deconnexion/">deconnexion</a>
+                </li>
+
+
 
             </ul>
 

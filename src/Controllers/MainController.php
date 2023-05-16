@@ -165,6 +165,16 @@ public function register(): void
 
     }
 
+    // TODO : Rediriger sur la page de connexion si l'utilisateur n'est pas connecté
+    public function logout(): void
+    {
+        unset($_SESSION['user']);
+
+        dump($_SESSION);
+
+        require VIEWS_DIR . '/logout.php';
+    }
+
 
 /**
  * Contrôleur de la page 404
