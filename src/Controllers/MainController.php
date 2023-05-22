@@ -306,6 +306,20 @@ $fruits = $fruitManager->findAll()
 
     }
 
+    public function fruitDetails(): void
+    {
+
+        $fruitManager = new FruitManager();
+
+        $fruit = $fruitManager->findOneBy('id', $_GET['id']);
+
+        if(empty($fruit)){
+            $this->page404();
+            die();
+        }
+        require VIEWS_DIR . '/fruitDetails.php';
+    }
+
     /**
      * Contrôleur de la page 404
      */
