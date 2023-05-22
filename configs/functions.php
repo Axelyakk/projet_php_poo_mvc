@@ -62,7 +62,7 @@ $path = substr($path, 0, $position);
 return $path;
 }
 
-function connectedDb(): PDO
+function connectDb(): PDO
 {
 
     $db = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASSWORD);

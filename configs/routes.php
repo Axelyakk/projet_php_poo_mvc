@@ -17,8 +17,8 @@ switch (ROUTE){
 
     //Route de la page d'accueil
     case '/';
-    $mainController->home();
-    break;
+        $mainController->home();
+        break;
 
 
     //Route de la page d'inscription
@@ -26,15 +26,26 @@ switch (ROUTE){
         $mainController->register();
         break;
 
-    // Route de la page de connexion
+    //Route de la page de connexion
     case '/connexion/';
         $mainController->login();
         break;
 
-    // Route de la page de deconnexion
+    //Route de la page de déconnexion
     case '/deconnexion/';
         $mainController->logout();
         break;
+
+    //Route de la page de profil
+    case '/mon-profil/';
+        $mainController->profil();
+        break;
+
+    // Route de la page d'ajout d'un fruit
+    case '/fruits/ajouter-un-fruit/';
+        $mainController->fruitAdd();
+        break;
+
 
     //Si aucune des URL précédentes ne match, c'est la pag qui sera appelée par défaut
     default:
