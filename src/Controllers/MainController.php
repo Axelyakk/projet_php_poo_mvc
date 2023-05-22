@@ -308,6 +308,11 @@ $fruits = $fruitManager->findAll()
 
     public function fruitDetails(): void
     {
+        if(!isset($_GET['id'])){
+            $this->page404();
+            die();
+        }
+
 
         $fruitManager = new FruitManager();
 
