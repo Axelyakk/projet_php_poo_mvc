@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Acuueil-Wikifruits</title>
+    <title>Accueil - Wikifruits</title>
 
     <!---Inclusion du contenu du fichier header.php--->
    <?php include VIEWS_DIR . '/partials/header.php';?>
