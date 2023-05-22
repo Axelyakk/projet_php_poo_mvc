@@ -56,6 +56,10 @@ switch (ROUTE){
         $mainController->fruitDetails();
         break;
 
+        case '/fruits/supprimer/';
+            $mainController->fruitDelete();
+            break;
+
 
     //Si aucune des URL précédentes ne match, c'est la pag qui sera appelée par défaut
     default:
